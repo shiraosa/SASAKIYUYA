@@ -3,41 +3,82 @@ html{
     margin: 0;
     padding: 0;
 }
-header{
-    width: 90%;
-    margin-left: 10%;
-    margin-right: 0;
-}
 .header-logo-menu {
-    display:flex;
+    margin:0 0 5px 9%;
+    height: 30px;
+    display: flex;
+    justify-content:space-between;
+}
+.logo{
+    margin: 5px;
+}
+.header-logo-menu nav {
+    display: flex;
     justify-content: space-between;
 }
-.header-menu {
-    margin: 10px 20% 10px 20%;
-    font-size: 14px;
-    white-space: nowrap;
+.header-menu{
+    margin-right: 100px;
 }
 .header-menu li{
+    justify-content: center;
     display: inline;
-    font-weight: 900;
     margin-right: 10px;
+    font-size: 14px;
+    font-weight: 900;
 }
-
-.utility-menu li {
+.utility-menu li{
     display: inline;
+    margin-right: 30px;
 }
-
-
-.breadcrumb {
-    margin: 20px;
+.breadcrumbs {
     list-style: none;
+    margin:0 0 0 12%;
+    padding-top: 0;
 }
-.breadcrumb li{
+.breadcrumbs li{
     display: inline;
+    font-size: 10px;
 }
-.breadcrumb li::after{
+.breadcrumbs li::after{
     content: " > ";
 }
-.breadcrumb li:last-child::after{
+.breadcrumbs li:last-child::after{
     content: none;
+}
+.title-img-box{
+    display: flex;
+    height: 250px;
+    background-image: url(images/h1whats2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.title-img-box h1{
+    width:1000PX;
+    margin: 30px auto auto auto;
+    color:#ffffff;
+}
+.main-box{
+    width: 800px;
+    margin: auto;
+}
+.share{
+    margin-top:50px;
+}
+.share-icon{
+    width: fit-content;
+    margin-left: auto;
+    display: flex;
+}
+.share-icon li{
+    display: inline;
+    margin-right: 15px;
+}
+.share-icon li img{
+    height: 25px;
+}
+.share-icon:first-child::before{
+    content: "Share";
+    font-size: 12px;
+    color: #808080;
+    margin-right: 15px;
 }
