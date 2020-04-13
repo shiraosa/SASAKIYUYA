@@ -1,33 +1,48 @@
 @charset "utf-8";
-html{
+html,body,header,footer{
     margin: 0;
     padding: 0;
 }
+
+ul{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #0c419A;
+}
+
+
 .header-logo-menu {
-    margin:0 0 5px 9%;
-    height: 30px;
+    max-width: 1710px;
+    margin:0 0 5px auto;
     display: flex;
     justify-content:space-between;
+    align-items: center;
 }
 .logo{
     margin: 5px;
+    height: 30px;
+    width: 60px;
 }
 .header-logo-menu nav {
+    width:65% ;
     display: flex;
     justify-content: space-between;
 }
-.header-menu{
-    margin-right: 100px;
-}
 .header-menu li{
     justify-content: center;
-    display: inline;
+    display: inline-block;
     margin-right: 10px;
+}
+.header-menu a{
     font-size: 14px;
     font-weight: 900;
+    color: #000000;
+
 }
 .utility-menu li{
-    display: inline;
+    display: inline-block;
     margin-right: 30px;
 }
 .breadcrumbs {
@@ -36,7 +51,7 @@ html{
     padding-top: 0;
 }
 .breadcrumbs li{
-    display: inline;
+    display: inline-block;
     font-size: 10px;
 }
 .breadcrumbs li::after{
@@ -58,8 +73,8 @@ html{
     color:#ffffff;
 }
 .main-box{
-    width: 800px;
-    margin: auto;
+    max-width:800px ;
+    margin: auto auto 200px;
 }
 .share{
     margin-top:50px;
@@ -81,4 +96,176 @@ html{
     font-size: 12px;
     color: #808080;
     margin-right: 15px;
+}
+
+
+.main-h2::before{
+    display: inline-block;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-image: url(images/bg-heading-h2.png);
+}
+img[src="images/story06img01.jpg"]{
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.pdf-btn{
+    display: block;
+    text-align: center;
+    background-color: #005bac;
+    color: #ffffff;
+    max-width: 300px;
+    height: auto;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+.next-prev{
+    display: flex;
+    justify-content: space-between;
+}
+.prev::before{
+    content: "<";
+}
+.next::after{
+    content: ">";
+}
+.blue-box{
+    max-width: 800px;
+}
+
+.h2-box{
+    padding: 30px;
+    background-color: #deecf8;
+}
+.h2-box h2{
+    margin: 0;
+    font-size:16px;
+}
+.h2-ul-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.h2-ul-box li{
+    display: inline-block;
+    text-align: center;
+    background-color: #ffffff;
+    width: 240px;
+    margin:0 0 10px 0px;
+    position: relative;
+}
+.h2-ul-box a{
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+}
+.h2-ul-box li::before{
+    content: ">";
+    position: absolute;
+    top: 25%;
+    }
+
+.sub-box{
+    max-width:1000px ;
+    margin: auto;
+}
+.sub-box h2{
+    border-top:solid 2px #000000;
+    border-bottom:dotted 1px #000000;
+    
+    padding: 30px 0;
+}
+.sub-box section{
+    border-bottom:dotted 1px #000000;
+}
+.sub-box ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;   
+}
+.sub-box li{
+    display: inline;
+    width: 25%;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.sub-box a{
+    padding-left: 10px;
+}
+.sub-box li::before{
+    content: "<";
+    font-size: 8px;
+}
+.backprev{
+    max-width:1000px ;
+    margin: auto;
+}
+.backprev p::before{
+    content: "<";
+}
+
+.follow-sns {
+    text-align: center;
+    border-top: solid 2px #000000;
+    border-bottom:solid 2px #000000 ;
+}
+.follow-sns li{
+    display: inline;
+    font-weight: 800;
+}
+.follow-sns img{
+    height: 30px;
+    margin-left: 35px;
+}
+
+.footer-column-box{
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-column{
+    width:  25%;
+    list-style: none;
+    padding: 0px;
+}
+.footer-column li{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.footer-column strong{
+    padding:12px 0 12px 0 ;
+    font-weight: 900;
+}
+.footer-column li::before{
+    content: ">";
+    font-size: 8px;
+}
+.footer-menu{
+    border-top: solid 1px #000000;
+}
+.site-policy{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+}
+.site-policy li{
+    font-size: 12px;
+    list-style: none;
+    margin-right: 10px;
+}
+.site-policy li::before{
+    content: "|";
+    margin-right: 10px;
+}
+.site-policy li:first-child::before{
+    content: none;
+}
+address{
+    width: 1000px;
+    margin: auto;
 }
