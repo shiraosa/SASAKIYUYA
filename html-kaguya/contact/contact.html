@@ -5,7 +5,7 @@
     <meta name="discription" content="家具屋課題のHTML">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        htmlcssHome
+        htmlcssCONTACT
     </title>
 </head>
 <body>
@@ -21,15 +21,32 @@
         </nav>
     </header>
     <main>
+        <section class="h1-bg-img"><!-- ../images/contact_top.png-->
+            <h1>CONTACT</h1>
+        </section>
+        <section>
+            <div class="contact">
+                <h2>お問い合わせ</h2>
+                <p>オーダー家具や在庫状況のお問い合わせは下記フォームから承っております。</p>
+                <form class="contact-form" action="#" method="POST">
+                   <p><input type="text" name="name" placeholder="お名前"></p>
+                   <p><input type="email" name="email" placeholder="メールアドレス"></p>
+                   <p><textarea name="contact-details" placeholder="お問い合わせ内容"></textarea></p>
+                   <p><input type="submit" name="submit" value="SEND"></p>
+                </form>              
+            </div>
+        </section>
     </main>
     <footer>
-        <img class="footer-logo" src="../images/logo_footer.png">
-        <ul>
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="../news/news.html">NEWS</a></li>
-            <li><a href="../recruit/recruit.html">RECRUIT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+        <div class="footer-menu">
+            <img class="footer-logo" src="../images/logo_footer.png" alt="footer-logo">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../news/news.html">NEWS</a></li>
+                <li><a href="../recruit/recruit.html">RECRUIT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
         <p><small>©HTMLCSS.code</small></p>
     </footer>
 </body>
