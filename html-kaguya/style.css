@@ -63,7 +63,7 @@ main{
     font-size: 53px ;
     font-weight: normal;
     letter-spacing: 2.65px;
-    color: #918F89;
+    color: #918f89;
     opacity: 1;
 }
 .main-h2-flex{
@@ -128,7 +128,7 @@ main{
     font-size: 17px;
     font-weight: 200;
     line-height: 300px;
-    text-shadow: 0px 0px 6px #000000E0;
+    text-shadow: 0px 0px 6px #000000e0;
 }
 .viewmore{
     margin-top: 39px;
@@ -160,7 +160,7 @@ main{
 .pdf-btn{
     width: 344px;
     height: 56px;
-    background-color:#D1D1D1 ;
+    background-color:#d1d1d1 ;
     margin:40px auto 0 auto;
     text-align: center;
     border-radius: 40px;
@@ -191,7 +191,7 @@ input[name="name"]{
     width: 422px;
     padding:10px 16px 10px 16px ;
     font-size: 12px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     border-radius: 16px;
     opacity: 0.6;
@@ -201,7 +201,7 @@ input[name="email"]{
     margin-top: 24px;
     padding:10px 16px 10px 16px ;
     font-size: 12px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     border-radius: 16px;
     opacity: 0.6;
@@ -212,7 +212,7 @@ textarea[name="contact-details"]{
     margin-top: 24px;
     height: 200px;
     font-size: 12px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     border-radius: 16px;
     opacity: 0.6;
@@ -233,7 +233,7 @@ input[type="submit"]{
     line-height: 32px;
     letter-spacing: 1.4px;
     color:#707070 ;
-    background-color:#D1D1D1 ;
+    background-color:#d1d1d1 ;
     border-radius: 16px;
 }
 input[type="submit"]:hover{
@@ -265,7 +265,7 @@ footer{
     width: 1280px;
     height: 240px;
     margin: 0 auto; 
-    background-color:#918F89;
+    background-color:#918f89;
 }
 .footer-flex{
     display: flex;
@@ -287,7 +287,7 @@ footer{
     height: 22px;
     margin-top: 120px;
     margin-right: 32px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 .footer-flex a[href*="index"]:hover{
     cursor: default;
