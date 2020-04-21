@@ -77,6 +77,7 @@ main{
 }
 .h2-p-block h2{
     margin-bottom: 71px;
+    font-size: 25px;
 }
 .h2-p-block p{
     font-size: 12px;
@@ -94,6 +95,7 @@ main{
     display: block;
     width: fit-content;
     margin: 0 auto 0 auto;
+    font-size: 23px;
 }
 .news-item-container{
     display: flex;
