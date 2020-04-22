@@ -4,21 +4,24 @@
     <meta charset="utf-8">
     <meta name="discription" content="家具屋課題のHTML">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>
         htmlcssHome
     </title>
 </head>
 <body>
-    <header>
-        <img class="header-logo" src="images/logo_header.png" alt="htmlcsslogo">
-        <nav class="header-nav">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="news/news.html">NEWS</a></li>
-                <li><a href="recruit/recruit.html">RECRUIT</a></li>
-                <li><a href="contact/contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
+    <header class="header-stickey">
+        <div class="header-flex">
+            <img class="header-logo" src="images/logo_header.png" alt="htmlcsslogo">
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news/news.html">NEWS</a></li>
+                    <li><a href="recruit/recruit.html">RECRUIT</a></li>
+                    <li><a href="contact/contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="h1-bg-img"><!-- images/home_top.png-->
@@ -47,13 +50,13 @@
                         <p>アームストロングのテーブル入荷</p>
                     </div>
                 </div>
-                <p><a href="news/news.html">view more</a></p>
+                <p class="viewmore"><a href="news/news.html">view more</a></p>
             </div>
         </section>
         <section>
             <div class="catalogue">
                 <h2>公式カタログ</h2>
-                <p>様々なスタイルをご提案いたします。オーダーメイドも可能です。<br>詳しくはカタログをご覧ください。</p>
+                <p class="catalogue-p">様々なスタイルをご提案いたします。オーダーメイドも可能です。<br>詳しくはカタログをご覧ください。</p>
                 <div class="pdf-btn">
                     <p><a href="pdf/kaguya.pdf" target="_blank">カタログをダウンロード</a></p>
                 </div>
@@ -63,7 +66,7 @@
             <div class="contact">
                 <h2>CONTACT</h2>
                 <form class="contact-form" action="#" method="POST">
-                    <p><input type="text" name="name" placeholder="お名前"></p>
+                    <p><input type="text" name="name" placeholder="お名前" ></p>
                     <p><input type="email" name="email" placeholder="メールアドレス"></p>
                     <p><textarea name="contact-details" placeholder="お問い合わせ内容"></textarea></p>
                     <p><input type="submit" name="submit" value="SEND"></p>
@@ -74,21 +77,23 @@
             <div class="recruit">
                 <h2>RECRUIT</h2>
                 <p>現在Staffを募集しております。<br>詳しくは詳細ページをご覧ください。</p>
-                <p><a href="recruit/recruit.html">view more</a></p>
+                <p class="viewmore"><a href="recruit/recruit.html">view more</a></p>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer-menu">
-            <img class="footer-logo" src="images/logo_footer.png" alt="logo">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="news/news.html">NEWS</a></li>
-                <li><a href="recruit/recruit.html">RECRUIT</a></li>
-                <li><a href="contact/contact.html">CONTACT</a></li>
-            </ul>
+        <div class="footer-box">
+            <div class="footer-flex">
+                <img class="footer-logo" src="images/logo_footer.png" alt="logo">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news/news.html">NEWS</a></li>
+                    <li><a href="recruit/recruit.html">RECRUIT</a></li>
+                    <li><a href="contact/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <p><small>©HTMLCSS.code</small></p>
         </div>
-        <p><small>©HTMLCSS.code</small></p>
     </footer>
 </body>
 </html>
