@@ -1,0 +1,168 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+html,body,header,footer,img,nav,ul,li,form,input,h1,h2,h3,p,a,tr,th,td{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: unset;
+    font-family: 'Noto Sans',sans-serif;
+    font-weight: 400;
+}
+html{
+    color: #3b3b3b;
+}
+
+.header-stickey{
+    background-color: #ffffff;
+}
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    height: 56px;
+    margin: 0 auto; 
+}
+.header-logo{
+    width: 38.49px;
+    height: 24px;
+    margin:16px 16px 0 96px;
+}
+.header-nav ul{
+    display:flex;
+    justify-content: right;
+    height: 22px;
+    margin:26px 96px 8px 0;
+}
+.header-nav li{
+    display: inline-block;
+    height: 22px;
+    margin-right: 56px;
+    color: #b2b2b2;
+    font-size: 16px;
+}
+.header-nav li:last-child{
+    margin-right: 0;
+}
+.header-nav a[href*=recruit]{
+    cursor: default;
+    color: #3b3b3b;
+}
+main{
+    width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 320px;
+    background-color: #fcfcfc;
+}
+.h1-bg-img{
+    height: 456px;
+    background-image: url(../images/recruit_top.png);
+}
+.h1-bg-img h1{
+    width: 140px;
+    height: 41px;
+    position: relative;
+    top: 192px;
+    left: 228px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #918f89;
+}
+.recruit-info{
+    margin-top: 168px;
+}
+.recruit-info h2{
+    width: 112px;
+    height: 33px;
+    margin: 0 auto 0 auto;
+    font-size: 23px;
+    letter-spacing:2px ;
+}
+/*===↓テーブルの角丸===*/
+.recruit-table{
+    width: 640px;
+    height: 624px;
+    margin:32px auto 0 auto ;
+    border: 1px solid #707070;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius:4px ;
+}
+th,td{
+    border-bottom: 2px solid #b6b6b6;
+}
+th{
+    border-right: 2px solid #b6b6b6;
+}
+tr:first-child th{
+    border-radius: 4px 0 0 0;
+}
+tr:first-child td{
+    border-radius: 0 4px 0 0;
+}
+tr:nth-of-type(4) th{
+    border-bottom: none;
+    border-radius: 0 0 0 4px;
+}
+tr:last-child td{
+    border-bottom: none;
+    border-radius: 0 0 4px 0;
+}
+/*===↑テーブルの角丸===*/
+.recruit-table th{
+    width: 142px;
+    font-size:16px;
+    color: #424242;
+    background-color:#dcdbd9 ;
+}
+.recruit-table td{
+    padding-left:46px ;
+    line-height: 22px;
+    font-size: 14px;
+}
+.topic{
+    display: inline-block;
+    height: fit-content;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+.recruit-table td ul{
+    list-style: "・";
+    padding-left: 14px;
+}
+.footer-box{
+    width: 1280px;
+    height: 240px;
+    margin: 0 auto; 
+    background-color:#918f89;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo{
+    width: 64px;
+    height: 40px;
+    margin:120px 16px 0 224px;
+}
+.footer-flex ul{
+    display:flex ;
+    justify-content:right ;
+    height: 22px;
+    margin-right:224px;
+}
+.footer-flex li{
+    display: inline-block;
+    height: 22px;
+    margin-top: 120px;
+    margin-right: 32px;
+    color: #ffffff;
+}
+.footer-flex a[href*="recruit"]:hover{
+    cursor: default;
+}
+.footer-box p{
+    width: 92px;
+    margin:41px auto auto auto;
+    font-size: 11px;
+    color: #ffffff;
+}
