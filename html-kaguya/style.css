@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 html,body,header,footer,img,nav,ul,li,form,input,h1,h2,h3,p,a{
     margin: 0;
     padding: 0;
@@ -50,6 +50,8 @@ html{
 main{
     width: 1280px;
     margin: 0 auto;
+    padding-bottom: 320px;
+    background-color: #fcfcfc;
 }
 .h1-bg-img{
     background-image:url(images/home_top.png);
@@ -77,20 +79,15 @@ main{
     width: 381px;
     margin:240px 195px auto 56px;
 }
-.h2-p-block *{
-    font-family: 'Noto Sans JP', sans-serif ;
-}
 .h2-p-block h2{
     margin-bottom: 65px;
     font-size: 25px;
-    font-weight: 300;
     letter-spacing: 2px;
 }
 .h2-p-block p{
     vertical-align: top;
     font-size: 12px;
     line-height: 30px;
-    font-weight: 300;
 }
 .h2-p-block img{
     height: 560px;
@@ -134,9 +131,7 @@ main{
     background-color: rgba(0, 0, 0, 0.4);
     color: #ffffff;
     text-align: center;
-    font-family: 'Noto Sans JP', sans-serif;
     font-size: 17px;
-    font-weight: 200;
     line-height: 300px;
     text-shadow: 0px 0px 6px #000000e0;
 }
@@ -167,8 +162,6 @@ main{
     margin:48px auto 0 auto;
     text-align: center;
     font-size: 15px;
-    font-family: "Noto Sans JP";
-    font-weight: 300;
     line-height: 30px;
 }
 .pdf-btn{
@@ -270,9 +263,6 @@ input[type="submit"]:hover{
     font-size: 15px;
     text-align: center;
     line-height: 30px;
-}
-footer{
-    margin-top: 320px;
 }
 .footer-box{
     width: 1280px;

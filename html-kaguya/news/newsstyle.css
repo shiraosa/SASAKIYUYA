@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 html,body,header,footer,img,nav,ul,li,form,input,h1,h2,h3,p,a{
     margin: 0;
     padding: 0;
@@ -50,6 +50,8 @@ html{
 main{
     width: 1280px;
     margin: 0 auto;
+    padding-bottom: 320px;
+    background-color: #fcfcfc;
 }
 .h1-bg-img{
     height: 456px;
@@ -104,13 +106,8 @@ main{
     color: #ffffff;
     text-align: center;
     font-size: 17px;
-    font-family: "Noto Sans JP";
-    font-weight: 200;
     line-height: 300px;
     text-shadow: 0px 0px 6px #000000e0;
-}
-footer{
-    margin-top: 320px;
 }
 .footer-box{
     width: 1280px;
