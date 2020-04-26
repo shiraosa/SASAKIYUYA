@@ -317,17 +317,25 @@ input[type="submit"]:hover{
         height: 744px;
     }
     .h1-bg-color{
-        background-color:rgba(100%,100%,100%, 0.8);
-        opacity: 80%;
-        position: relative;
+        display: flex;
+        flex-flow: column;
+        background-color: initial;
+        justify-content: left;
+        top: 184px;
+        margin: 0;
+        padding: 0;
+    }
+    .h1-bg-color span{
+        display: inline-block;
         width: fit-content;
-        padding: 32px 32px 32px 88px;
-        top: 274px;
-        text-align: right;
-        font-size: 53px ;
-        letter-spacing: 2.65px;
+        background-color:rgba(100%,100%,100%, 0.6);
+        margin-top: 16px;
+        padding:0 16px 0 54px;
+        line-height: 80px;
+        text-align: left;
+        font-size: 39px ;
+        letter-spacing: 2px;
         color: #918f89;
-        opacity: 1;
     }
     .main-h2-flex{
         display: flex;
@@ -376,37 +384,40 @@ input[type="submit"]:hover{
     }
     .armstrong-couch{
         background-image:url(images/news01.png);
-        width: 320px;
-        height: 320px;
-        margin: 48px 32px 0 32px;
+        background-size: contain;
+        width: 272px;
+        height: 272px;
+        margin: 0 auto 24px auto;
     }
     .armstrong-chair{
         background-image: url(images/news02.png);
-        width: 320px;
-        height: 320px;
-        margin: 48px 32px 0 32px;
+        background-size: contain;
+        width: 272px;
+        height: 272px;
+        margin: 0 auto 24px auto;
     }
     .armstrong-table{
         background-image: url(images/news03.png);
-        width: 320px;
-        height: 320px;
-        margin: 48px 32px 0 32px;
+        background-size: contain;
+        width: 272px;
+        height: 272px;
+        margin: 0 auto 24px auto;
     }
     .news-item-container p{
-        width: 320px;
-        height: 320px;
+        width: 272px;
+        height: 272px;
         background-color: rgba(0, 0, 0, 0.4);
         color: #ffffff;
         text-align: center;
-        font-size: 17px;
-        line-height: 300px;
+        font-size: 15px;
+        line-height: 272px;
         text-shadow: 0px 0px 6px #000000e0;
     }
     .viewmore{
         margin-top: 39px;
         text-align: center;
         font-size: 18px !important;
-        opacity: 30%;
+        opacity: 1;
     }
     .viewmore::after{
         display: inline-block;
@@ -425,14 +436,14 @@ input[type="submit"]:hover{
         margin:0 auto 0 auto;
     }
     .catalogue-p{
-        width: fit-content;
+        width: 328px;
         margin:48px auto 0 auto;
         text-align: center;
-        font-size: 15px;
-        line-height: 30px;
+        font-size: 14px;
+        line-height: 27px;
     }
     .pdf-btn{
-        width: 344px;
+        width: 280px;
         height: 56px;
         background-color:#d1d1d1 ;
         margin:40px auto 0 auto;
@@ -462,7 +473,7 @@ input[type="submit"]:hover{
         margin:47px auto 0 auto;
     }
     input[name="name"]{
-        width: 286px;
+        width: 254px;
         padding:10px 16px 10px 16px ;
         font-size: 12px;
         background: #ffffff 0% 0% no-repeat padding-box;
@@ -471,7 +482,7 @@ input[type="submit"]:hover{
         opacity: 0.6;
     }
     input[name="email"]{
-        width: 286px;
+        width: 254px;
         margin-top: 24px;
         padding:10px 16px 10px 16px ;
         font-size: 12px;
@@ -481,7 +492,7 @@ input[type="submit"]:hover{
         opacity: 0.6;
         }
     textarea[name="contact-details"]{
-        width: 286px;
+        width: 254px;
         padding:10px 16px 10px 16px ;
         margin-top: 24px;
         height: 200px;
@@ -500,15 +511,15 @@ input[type="submit"]:hover{
     }
     input[type="submit"]{
         display: block;
-        width: 161px;
-        height: 32px;
+        width: 173px;
+        height: 48px;
         margin:40px auto 0 auto;
         font-size: 14px;
         line-height: 32px;
         letter-spacing: 1.4px;
         color:#707070 ;
         background-color:#d1d1d1 ;
-        border-radius: 16px;
+        border-radius: 30px;
     }
     input[type="submit"]:hover{
         background-color:#b2b2b2 ;
