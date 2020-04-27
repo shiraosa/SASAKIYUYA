@@ -11,14 +11,14 @@ html,body,header,footer,img,nav,ul,li,form,input,h1,h2,h3,p,a,tr,th,td{
 html{
     color: #3b3b3b;
 }
-
+/*====ヘッダー====*/
 .header-stickey{
     background-color: #ffffff;
 }
 .header-flex{
     display: flex;
     justify-content: space-between;
-    width: 1280px;
+    max-width: 1280px;
     height: 56px;
     margin: 0 auto; 
 }
@@ -26,6 +26,9 @@ html{
     width: 38.49px;
     height: 24px;
     margin:16px 16px 0 96px;
+}
+.header-logo-sp{
+    display: none;
 }
 .header-nav ul{
     display:flex;
@@ -47,6 +50,34 @@ html{
     cursor: default;
     color: #3b3b3b;
 }
+@media(max-width:375px){
+    .header-stickey{
+        background-color:#918f89 ;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    .header-flex{
+        display: inline-block;
+        min-width: 375px;
+        margin: 0;
+        height: 56px;
+    }
+    .header-logo{
+        display: none;
+    }
+    .header-logo-sp{
+        display: block;
+        width: 38.49px;
+        height: 24px;
+        margin:16px auto 0 auto;
+    }
+    .header-nav {
+        display: none;
+    }
+}
+/*====↑ヘッダー====*/
+/*====メイン====*/
 main{
     width: 1280px;
     margin: 0 auto;
@@ -129,6 +160,92 @@ tr:last-child td{
     list-style: "・";
     padding-left: 14px;
 }
+@media(max-width:375px){
+    main{
+        max-width: 375px;
+        margin: 0 auto;
+        padding-bottom: 240px;
+        background-color: #fcfcfc;
+    }
+    .h1-bg-img{
+        top: -56px;
+        max-width: 375px;
+        background:url(../images/recruit_top_sp.png) ;
+        height: 744px;
+    }
+    .h1-bg-img h1{
+        width: 140px;
+        height: 41px;
+        position: initial;
+        font-size: 30px;
+        letter-spacing: 3px;
+        color: #918f89;
+    }
+    .recruit-info{
+        margin-top: 168px;
+    }
+    .recruit-info h2{
+        width: 112px;
+        height: 33px;
+        margin: 0 auto 0 auto;
+        font-size: 23px;
+        letter-spacing:2px ;
+    }
+    /*===↓テーブルの角丸===*/
+    .recruit-table{
+        width: 344px;
+        height: 624px;
+        margin:32px auto 0 auto ;
+        border: 1px solid #707070;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius:4px ;
+    }
+    th,td{
+        border-bottom: 2px solid #b6b6b6;
+    }
+    th{
+        border-right: 2px solid #b6b6b6;
+    }
+    tr:first-child th{
+        border-radius: 4px 0 0 0;
+    }
+    tr:first-child td{
+        border-radius: 0 4px 0 0;
+    }
+    tr:nth-of-type(4) th{
+        border-bottom: none;
+        border-radius: 0 0 0 4px;
+    }
+    tr:last-child td{
+        border-bottom: none;
+        border-radius: 0 0 4px 0;
+    }
+    /*===↑テーブルの角丸===*/
+    .recruit-table th{
+        width: 142px;
+        font-size:16px;
+        color: #424242;
+        background-color:#dcdbd9 ;
+    }
+    .recruit-table td{
+        padding-left:46px ;
+        line-height: 22px;
+        font-size: 14px;
+    }
+    .topic{
+        display: inline-block;
+        height: fit-content;
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .recruit-table td ul{
+        list-style: "・";
+        padding-left: 14px;
+    }
+}
+/*====↑メイン====*/
+/*====フッター====*/
 .footer-box{
     width: 1280px;
     height: 240px;
@@ -138,6 +255,9 @@ tr:last-child td{
 .footer-flex{
     display: flex;
     justify-content: space-between;
+}
+.a-sp{
+    pointer-events: none;
 }
 .footer-logo{
     width: 64px;
@@ -166,3 +286,33 @@ tr:last-child td{
     font-size: 11px;
     color: #ffffff;
 }
+@media(max-width:375px){
+    .footer-box{
+        width: 375px;
+        height: 240px;
+        margin: 0; 
+        background-color:#918f89;
+    }
+    .a-sp{
+        display: flex;
+        width: 375px;
+        pointer-events: visible;
+        justify-content: center;
+    }
+    .footer-logo{
+        display: block;
+        width: 64px;
+        height: 40px;
+        margin:120px auto 0 auto;
+    }
+    .footer-flex ul{
+        display:none ;
+    }
+    .footer-box p{
+        width: 92px;
+        margin:41px auto auto auto;
+        font-size: 11px;
+        color: #ffffff;
+    }
+}
+/*====↑フッター====*/

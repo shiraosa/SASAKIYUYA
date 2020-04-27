@@ -11,14 +11,14 @@ html,body,header,footer,img,nav,ul,li,form,input,h1,h2,h3,p,a{
 html{
     color: #3b3b3b;
 }
-
+/*====ヘッダー====*/
 .header-stickey{
     background-color: #ffffff;
 }
 .header-flex{
     display: flex;
     justify-content: space-between;
-    width: 1280px;
+    max-width: 1280px;
     height: 56px;
     margin: 0 auto; 
 }
@@ -26,6 +26,9 @@ html{
     width: 38.49px;
     height: 24px;
     margin:16px 16px 0 96px;
+}
+.header-logo-sp{
+    display: none;
 }
 .header-nav ul{
     display:flex;
@@ -47,6 +50,8 @@ html{
     cursor: default;
     color: #3b3b3b;
 }
+/*====↑ヘッダー====*/
+/*====メイン====*/
 main{
     width: 1280px;
     margin: 0 auto;
@@ -109,6 +114,22 @@ main{
     line-height: 300px;
     text-shadow: 0px 0px 6px #000000e0;
 }
+@media(max-width:375px){
+    main{
+        max-width: 375px;
+        margin: 0 auto;
+        padding-bottom: 240px;
+        background-color: #fcfcfc;
+    }
+    .h1-bg-img{
+        top: -56px;
+        max-width: 375px;
+        background:url(images/home_top_sp.png) ;
+        height: 744px;
+    }
+}
+/*====↑メイン====*/
+/*====フッター====*/
 .footer-box{
     width: 1280px;
     height: 240px;
@@ -118,6 +139,9 @@ main{
 .footer-flex{
     display: flex;
     justify-content: space-between;
+}
+.a-sp{
+    pointer-events: none;
 }
 .footer-logo{
     width: 64px;
@@ -146,3 +170,33 @@ main{
     font-size: 11px;
     color: #ffffff;
 }
+@media(max-width:375px){
+    .footer-box{
+        width: 375px;
+        height: 240px;
+        margin: 0; 
+        background-color:#918f89;
+    }
+    .a-sp{
+        display: flex;
+        width: 375px;
+        pointer-events: visible;
+        justify-content: center;
+    }
+    .footer-logo{
+        display: block;
+        width: 64px;
+        height: 40px;
+        margin:120px auto 0 auto;
+    }
+    .footer-flex ul{
+        display:none ;
+    }
+    .footer-box p{
+        width: 92px;
+        margin:41px auto auto auto;
+        font-size: 11px;
+        color: #ffffff;
+    }
+}
+/*====↑フッター====*/

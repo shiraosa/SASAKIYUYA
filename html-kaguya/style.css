@@ -270,7 +270,14 @@ input:focus,textarea:focus{
 ::placeholder{
     font-size: 12px;
 }
-input[type="submit"]{
+textarea[name="contact-details"]::placeholder{
+    position: relative;
+    top: -1px;
+}
+input[value="Send"]{
+    display: none;
+}
+input[value="SEND"]{
     display: block;
     width: 161px;
     height: 32px;
@@ -381,6 +388,7 @@ input[type="submit"]:hover{
     .news-item-container{
         display: flex;
         flex-flow: column;
+        margin-top: 24px;
     }
     .armstrong-couch{
         background-image:url(images/news01.png);
@@ -406,7 +414,7 @@ input[type="submit"]:hover{
     .news-item-container p{
         width: 272px;
         height: 272px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.6);
         color: #ffffff;
         text-align: center;
         font-size: 15px;
@@ -470,7 +478,7 @@ input[type="submit"]:hover{
     }
     .contact-form{
         width: 286px;
-        margin:47px auto 0 auto;
+        margin:32px auto 0 auto;
     }
     input[name="name"]{
         width: 254px;
@@ -483,7 +491,7 @@ input[type="submit"]:hover{
     }
     input[name="email"]{
         width: 254px;
-        margin-top: 24px;
+        margin-top: 16px;
         padding:10px 16px 10px 16px ;
         font-size: 12px;
         background: #ffffff 0% 0% no-repeat padding-box;
@@ -493,27 +501,31 @@ input[type="submit"]:hover{
         }
     textarea[name="contact-details"]{
         width: 254px;
-        padding:10px 16px 10px 16px ;
-        margin-top: 24px;
+        padding:15px 16px 10px 16px ;
+        margin-top: 16px;
         height: 200px;
-        font-size: 12px;
+        font-size: 14px;
         background: #ffffff 0% 0% no-repeat padding-box;
         border: 1px solid #707070;
         border-radius: 16px;
         opacity: 0.6;
         resize: none;
+        vertical-align: middle;
     }
     input:focus,textarea:focus{
         outline: none;
     }
     ::placeholder{
-        font-size: 12px;
+        font-size: 14px;
     }
-    input[type="submit"]{
+    input[value="SEND"]{
+        display: none;
+    }
+    input[value="Send"]{
         display: block;
         width: 173px;
         height: 48px;
-        margin:40px auto 0 auto;
+        margin:32px auto 0 auto;
         font-size: 14px;
         line-height: 32px;
         letter-spacing: 1.4px;
@@ -537,7 +549,7 @@ input[type="submit"]:hover{
     .recruit p{
         width: 262px;
         height: 48px;
-        margin: 48px auto 39px auto;
+        margin: 32px auto 24px auto;
         font-size: 15px;
         text-align: center;
         line-height: 30px;
