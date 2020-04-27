@@ -607,16 +607,16 @@ input[type="submit"]:hover{
         justify-content: space-between;
     }
     .footer-logo{
-        width: 64px;
-        height: 40px;
-        margin:120px auto 0 auto;
+        width: 52px;
+        height: 32px;
+        margin:72px auto 0 auto;
     }
     .footer-flex ul{
         display:none ;
     }
     .footer-box p{
-        width: 92px;
-        margin:41px auto auto auto;
+        width: 82px;
+        margin:82px auto auto auto;
         font-size: 11px;
         color: #ffffff;
     }

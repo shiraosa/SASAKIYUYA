@@ -50,6 +50,32 @@ html{
     cursor: default;
     color: #3b3b3b;
 }
+@media(max-width:375px){
+    .header-stickey{
+        background-color:#918f89 ;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    .header-flex{
+        display: inline-block;
+        min-width: 375px;
+        margin: 0;
+        height: 56px;
+    }
+    .header-logo{
+        display: none;
+    }
+    .header-logo-sp{
+        display: block;
+        width: 38.49px;
+        height: 24px;
+        margin:16px auto 0 auto;
+    }
+    .header-nav {
+        display: none;
+    }
+}
 /*====↑ヘッダー====*/
 /*====メイン====*/
 main{
@@ -67,11 +93,11 @@ main{
     width: 93px;
     height: 41px;
     position: relative;
-    top: 191px;
-    left: 228px;
-    font-size: 30px;
+    top: 256px;
+    left: 148px;
+    font-size: 25px;
     letter-spacing: 3px;
-    color: #918f89;
+    color: #3b3b3b;
 }
 .stock-info{
     margin-top: 168px;
@@ -124,8 +150,53 @@ main{
     .h1-bg-img{
         top: -56px;
         max-width: 375px;
-        background:url(images/home_top_sp.png) ;
-        height: 744px;
+        background:url(../images/news_top_sp.png) ;
+        height: 704px;
+    }
+    .stock-info{
+        margin-top: 104px;
+    }
+    .stock-info h2{
+        display: block;
+        width: fit-content;
+        margin: 0 auto 32px;
+        font-size: 23px;
+    }
+    .news-item-container{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .armstrong-couch{
+        background-image:url(../images/news01.png);
+        background-size: contain;
+        width: 272px;
+        height: 272px;
+        margin: 0 auto 24px;
+    }
+    .armstrong-chair{
+        background-image: url(../images/news02.png);
+        background-size: contain;
+        width: 272px;
+        height: 272px;
+        margin: 0 auto 24px;
+    }
+    .armstrong-table{
+        background-image: url(../images/news03.png);
+        background-size: contain;
+        width: 272px;
+        height: 272px;
+        margin: 0 auto 24px;
+    }
+    .news-item-container p{
+        width: 272px;
+        height: 272px;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        text-align: center;
+        font-size: 15px;
+        line-height: 272px;
+        text-shadow: 0px 0px 6px #000000e0;
     }
 }
 /*====↑メイン====*/
@@ -185,16 +256,16 @@ main{
     }
     .footer-logo{
         display: block;
-        width: 64px;
-        height: 40px;
-        margin:120px auto 0 auto;
+        width: 52px;
+        height: 32px;
+        margin:72px auto 0 auto;
     }
     .footer-flex ul{
         display:none ;
     }
     .footer-box p{
-        width: 92px;
-        margin:41px auto auto auto;
+        width: 82px;
+        margin:82px auto auto auto;
         font-size: 11px;
         color: #ffffff;
     }

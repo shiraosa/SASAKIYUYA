@@ -152,7 +152,10 @@ input:focus,textarea:focus{
 ::placeholder{
     font-size: 12px;
 }
-input[type="submit"]{
+input[value="Send"]{
+    display: none;
+}
+input[value="SEND"]{
     display: block;
     width: 161px;
     height: 32px;
@@ -178,8 +181,95 @@ input[type="submit"]:hover{
     .h1-bg-img{
         top: -56px;
         max-width: 375px;
-        background:url(images/home_top_sp.png) ;
-        height: 744px;
+        background:url(../images/contact_top_sp.png) ;
+        height: 704px;
+    }
+    .h1-bg-img h1{
+        width: 151px;
+        height: 41px;
+        position: relative;
+        top: 256px;
+        left: 119px;
+        font-size: 25px;
+        letter-spacing: 3px;
+        color: #fcfcfc;
+    }
+    .contact{
+        margin-top:104px ;
+    }
+    .contact h2{
+        font-size: 0;
+        width: fit-content;
+        margin: 0 auto 0 auto;
+    }
+    .contact h2::after{
+        font-size: 25px;
+        content: "CONTACT";
+        letter-spacing: 2px;
+    }
+    .contact h2+p{
+        display: none;
+    }
+    .contact-form{
+        width: 286px;
+        margin:32px auto 0 auto;
+    }
+    input[name="name"]{
+        width: 254px;
+        padding:10px 16px 10px 16px ;
+        font-size: 12px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 16px;
+        opacity: 0.6;
+    }
+    input[name="email"]{
+        width: 254px;
+        margin-top: 16px;
+        padding:10px 16px 10px 16px ;
+        font-size: 12px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 16px;
+        opacity: 0.6;
+        }
+    textarea[name="contact-details"]{
+        width: 254px;
+        padding:15px 16px 10px 16px ;
+        margin-top: 16px;
+        height: 200px;
+        font-size: 14px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 16px;
+        opacity: 0.6;
+        resize: none;
+        vertical-align: middle;
+    }
+    input:focus,textarea:focus{
+        outline: none;
+    }
+    ::placeholder{
+        font-size: 14px;
+    }
+    input[value="SEND"]{
+        display: none;
+    }
+    input[value="Send"]{
+        display: block;
+        width: 173px;
+        height: 48px;
+        margin:32px auto 0 auto;
+        font-size: 14px;
+        line-height: 32px;
+        letter-spacing: 1.4px;
+        color:#707070 ;
+        background-color:#d1d1d1 ;
+        border-radius: 30px;
+    }
+    input[type="submit"]:hover{
+        background-color:#b2b2b2 ;
+        color: #ffffff;
     }
 }
 /*====↑メイン====*/
@@ -239,16 +329,16 @@ input[type="submit"]:hover{
     }
     .footer-logo{
         display: block;
-        width: 64px;
-        height: 40px;
-        margin:120px auto 0 auto;
+        width: 52px;
+        height: 32px;
+        margin:72px auto 0 auto;
     }
     .footer-flex ul{
         display:none ;
     }
     .footer-box p{
-        width: 92px;
-        margin:41px auto auto auto;
+        width: 82px;
+        margin:82px auto auto auto;
         font-size: 11px;
         color: #ffffff;
     }

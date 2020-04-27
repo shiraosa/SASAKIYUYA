@@ -170,16 +170,18 @@ tr:last-child td{
     .h1-bg-img{
         top: -56px;
         max-width: 375px;
+        position: relative;
         background:url(../images/recruit_top_sp.png) ;
-        height: 744px;
+        height: 704px;
     }
     .h1-bg-img h1{
-        width: 140px;
-        height: 41px;
-        position: initial;
-        font-size: 30px;
+        width: 137px;
+        height: 32px;
+        top: 256px;
+        left:119px ;
+        font-size: 25px;
         letter-spacing: 3px;
-        color: #918f89;
+        color: #3b3b3b;
     }
     .recruit-info{
         margin-top: 168px;
@@ -195,7 +197,7 @@ tr:last-child td{
     .recruit-table{
         width: 344px;
         height: 624px;
-        margin:32px auto 0 auto ;
+        margin:40px auto 0 auto ;
         border: 1px solid #707070;
         border-collapse: separate;
         border-spacing: 0;
@@ -223,20 +225,20 @@ tr:last-child td{
     }
     /*===↑テーブルの角丸===*/
     .recruit-table th{
-        width: 142px;
-        font-size:16px;
+        width: 72px;
+        font-size:14px;
         color: #424242;
-        background-color:#dcdbd9 ;
+        background-color:#e5e5e4 ;
     }
     .recruit-table td{
-        padding-left:46px ;
+        padding-left: 23px;
         line-height: 22px;
-        font-size: 14px;
+        font-size: 13px;
     }
     .topic{
         display: inline-block;
         height: fit-content;
-        font-size: 16px;
+        font-size: 15px;
         margin-bottom: 6px;
     }
     .recruit-table td ul{
@@ -301,16 +303,16 @@ tr:last-child td{
     }
     .footer-logo{
         display: block;
-        width: 64px;
-        height: 40px;
-        margin:120px auto 0 auto;
+        width: 52px;
+        height: 32px;
+        margin:72px auto 0 auto;
     }
     .footer-flex ul{
         display:none ;
     }
     .footer-box p{
-        width: 92px;
-        margin:41px auto auto auto;
+        width: 82px;
+        margin:82px auto auto auto;
         font-size: 11px;
         color: #ffffff;
     }
