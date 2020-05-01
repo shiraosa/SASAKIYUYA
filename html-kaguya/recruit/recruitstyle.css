@@ -170,7 +170,6 @@ tr:last-child td{
     .h1-bg-img{
         top: -56px;
         max-width: 375px;
-        position: relative;
         background:url(../images/recruit_top_sp.png) ;
         height: 704px;
     }
@@ -182,6 +181,7 @@ tr:last-child td{
         font-size: 25px;
         letter-spacing: 3px;
         color: #3b3b3b;
+        text-align: center;
     }
     .recruit-info{
         margin-top: 168px;
